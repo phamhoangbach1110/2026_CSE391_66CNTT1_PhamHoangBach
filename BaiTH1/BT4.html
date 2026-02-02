@@ -24,7 +24,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <form class="container">
         <div id="BasicInfo" class="row mt-5">
             <h4 class="border-bottom">Basic Info</h4>
             <div class="row ms-0">
@@ -38,7 +38,7 @@
                 <input class="col-sm-8" type="text" value="Anne">
 
                 <label class="col-sm-3 fw-bold mt-5">Gender</label>
-                <form class="col-sm-8 mt-3">
+                <div class="col-sm-8 mt-3">
                     <input type="radio" id="Male" name="gender" value="Male">
                     <label for="Male">Male</label><br>
                     <input type="radio" id="Female" name="gender" value="Female">
@@ -47,7 +47,7 @@
                     <label for="XXX">XXX</label><br>
                     <input type="radio" id="ZZZ" name="gender" value="ZZZ">
                     <label for="ZZZ">ZZZ</label>
-                </form>
+                </div>
 
                 <label class="col-sm-3 fw-bold">Title</label>
                 <input class="col-sm-8" type="text" value="Sales Representative">
@@ -116,18 +116,18 @@
                 <textarea class="col-sm-8" rows="5">Anne has a BA degree in English from St.Lawrence College. She is fluent in French and German.ZZZ</textarea>
 
                 <label class="col-sm-3 fw-bold">Preferred Shift</label>
-                <form class="col-sm-8">
+                <div class="col-sm-8">
                     <input id="op1" type="checkbox">
                     <label for="op1">Regular</label><br>
                     
                     <input id="op2" type="checkbox">
                     <label for="op2">Gravy Yard</label>
-                </form>
+                </div>
 
                 <label for="active" class="col-sm-3 fw-bold">Active?</label>
-                <form class="col-sm-8">
+                <div class="col-sm-8">
                     <input id="active" type="checkbox">
-                </form>
+                </div>
 
                 <label class="col-sm-3 fw-bold mt-5">Are you human?</label>
                 <div class="col-sm-8">
@@ -145,6 +145,6 @@
         
         <button type="submit" class="but sbm"><i class="fa fa-save"></i> Submit</button>
         <button type="reset" class="but">&times Cancel</button>
-    </div>
+        </form>
 </body>
 </html>
