@@ -21,7 +21,7 @@
        - background: white
        - border-radius: 8px
     */
-    width: 30% (hoặc calc(33.33% - 20px));
+    width: 30%;
     display: inline-block;
     border: 1px solid #ddd;
     padding: 20px;
