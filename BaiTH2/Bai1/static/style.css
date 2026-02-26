@@ -37,13 +37,17 @@ div + div{
     align-items: flex-start;
 }
 .contact-form__end-btn{
-    background-color: rgb(145, 227, 241);
-    color: rgba(255, 255, 255, 0.767);
+    background-color: rgb(1, 212, 231);
+    color: white;
     font-weight: bold;
     font-size: 12px;
     border: 1px solid rgba(0, 128, 255, 0.74);
     border-radius: 5px;
     padding: 12px 15px;
+    cursor: pointer;
+}
+.contact-form__end-btn:hover{
+    opacity: 0.3;
 }
 .contact-form__end-text{
     margin: 0;
