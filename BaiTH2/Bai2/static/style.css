@@ -1,0 +1,66 @@
+#background{
+    box-sizing: border-box;
+    background-image: url('../images/places/ocean.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 76%;
+}
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid orange;
+    padding: 5px;
+}
+#page-logo{
+    font-family: 'Oleo Script';
+    
+}
+.page-logo{
+    font-style: none;
+    font-size: 22px;
+    text-decoration: none;
+    font-display: swap;
+    color: rgb(230, 230, 80);
+}
+.nav__list{
+    margin: 0;
+    padding: 4px 0;
+    width: 120px;
+    font-size: small;
+    border: 2px solid rgb(255, 230, 192);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.nav__items{
+    text-decoration: none;
+    color: rgb(230, 230, 80);
+}
+
+/* main */
+main{
+    border: 3px solid rgb(235, 20, 235);
+}
+
+/* hero */
+#hero{
+    border: 3px solid rgb(244, 184, 244);
+    display: flex;
+    justify-content: center;
+}
+#hero-content{
+    background-color: rgba(56, 55, 55, 0.8);
+    border-radius: 8px;
+    color: white;
+    padding: 0px 100px 20px 100px;
+    margin: 40px;
+    text-align: center
+}
+.hero__btn{
+    text-decoration: none;
+    color: black;
+    background-color: yellow;
+    padding: 8px;
+    border-radius: 4px;
+}
