@@ -3,7 +3,7 @@
     background-image: url('../images/places/ocean.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center 76%;
+    background-position: center 100%;
 }
 /* header */
 header{
@@ -41,6 +41,7 @@ header{
 /* main */
 main{
     border: 3px solid rgb(235, 20, 235);
+    min-height: 500px;
 }
 
 /* hero */
@@ -48,14 +49,17 @@ main{
     border: 3px solid rgb(244, 184, 244);
     display: flex;
     justify-content: center;
+    padding-bottom: 95px;
 }
 #hero-content{
     background-color: rgba(56, 55, 55, 0.8);
     border-radius: 8px;
     color: white;
+    font-family: 'Quicksand';
     padding: 0px 100px 20px 100px;
     margin: 40px;
-    text-align: center
+    text-align: center;
+    box-shadow: 3px 2px 3px rgb(23, 3, 3);
 }
 .hero__btn{
     text-decoration: none;
@@ -63,4 +67,33 @@ main{
     background-color: yellow;
     padding: 8px;
     border-radius: 4px;
+}
+
+/* hight light */
+#highlights{
+    background-color: #b6e7e7;
+    border: 3px solid rgb(244, 184, 244);
+}
+.highlights__text{
+    text-align: center;
+    font-family: 'Raleway';
+}
+img{
+    width: 300px;
+    height: 100px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px grey;
+}
+#destinations{
+    display: flex;
+    justify-content: space-evenly;
+}
+.destination{
+    list-style: none;
+    text-align: center;
+    font-family: 'Raleway';
+    color: gray;
+}
+strong{
+    color: #068d30;
 }
