@@ -1,3 +1,6 @@
+body{
+    zoom: 90%;
+}
 #background{
     box-sizing: border-box;
     background-image: url('../images/places/ocean.jpg');
@@ -41,7 +44,6 @@ header{
 /* main */
 main{
     border: 3px solid rgb(235, 20, 235);
-    min-height: 500px;
 }
 
 /* hero */
@@ -49,7 +51,7 @@ main{
     border: 3px solid rgb(244, 184, 244);
     display: flex;
     justify-content: center;
-    padding-bottom: 95px;
+    padding-bottom: 80px;
 }
 #hero-content{
     background-color: rgba(56, 55, 55, 0.8);
@@ -96,4 +98,19 @@ img{
 }
 strong{
     color: #068d30;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    border: 3px solid orange;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+}
+.footer__list{
+    display: flex;
+    justify-content: center;
 }
