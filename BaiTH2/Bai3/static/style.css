@@ -1,0 +1,60 @@
+/* set up */
+.container{
+    border: 3px solid rgb(144, 230, 230);
+    margin: 0 auto;
+    width: 1000px;
+}
+
+/* header */
+.header{
+    justify-self: center;
+    font-family: monospace;
+    font-size: 30px;
+    width: 600px;
+    text-align: center;
+}
+
+/* main */
+main{
+    display: flex;
+}
+
+/* sidebar */
+.sidebar{
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 40px;
+}
+.sidebar p:nth-child(1){
+    font-family: monospace;
+}
+.sidebar p:nth-child(2){
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.3);
+}
+.sidebar p:nth-child(4){
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.sidebar p:nth-child(5){
+    font-family: sans-serif;
+    color: rgb(0, 119, 255);
+    font-size: 12px;
+}
+/* content */
+.content{
+    padding: 0 80px 0 20px;
+    margin-top: 24px;
+}
+.content p:nth-child(1){
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.3);
+}
+.content p:nth-child(2){
+    font-family: sans-serif;
+
+}
+.content p:nth-child(3){
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.3);
+}
