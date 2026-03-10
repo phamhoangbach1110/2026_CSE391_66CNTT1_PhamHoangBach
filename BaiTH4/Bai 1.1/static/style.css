@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+#board{
+    /* background-color: rgba(194, 191, 191, 0.763); */
+    max-width: 1100px;
+    min-height: 150px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px 5px rgba(194, 191, 191, 0.763);
+}
+
+.data{
+    display: flex;
+    justify-content: space-around;
+}
+.data__input{
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.btn--add{
+    background-color: blue;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    justify-self: flex-end;
+    margin: 10px 50px;
+}
+.btn--add:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+table{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+    border-collapse: collapse
+}
+th td{
+    padding: 12px 20px;
+    text-align: center;
+}
+
+.delete-btn{
+    background-color: red;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bolder;
+}
+.delete-btn:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
