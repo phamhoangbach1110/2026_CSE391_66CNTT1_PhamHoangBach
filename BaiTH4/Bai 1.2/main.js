@@ -31,7 +31,7 @@ function renderTable() {
             <td>${sv.name}</td>
             <td>${sv.score}</td>
             <td>${getRank(sv.score)}</td>
-            <th><button class="delete-btn" data-index="${index}">Xóa</button></th>
+            <td><button class="delete-btn" data-index="${index}">Xóa</button></td>
         `;
 
         tableBody.appendChild(tr);
@@ -42,12 +42,12 @@ function renderTable() {
 
 function updateStats() {
 
-    let total = students.length;
+    let total = filteredStudents.length;
 
     let avg = 0;
 
     if (total > 0) {
-        let sum = students.reduce((s, sv) => s + sv.score, 0);
+        let sum = filteredStudents.reduce((s, sv) => s + sv.score, 0);
         avg = (sum / total).toFixed(2);
     }
 
@@ -74,8 +74,6 @@ function addStudent() {
 
     applyFilter();
 
-    renderTable();
-
     nameInput.value = "";
     scoreInput.value = "";
     nameInput.focus();
@@ -94,10 +92,12 @@ tableBody.addEventListener("click", function(e) {
     if (e.target.classList.contains("delete-btn")) {
 
         let index = e.target.dataset.index;
+        let student = filteredStudents[index];
+        let realIndex = students.indexOf(student)
 
-        students.splice(index, 1);
+        students.splice(realIndex, 1);
 
-        renderTable();
+        applyFilter();
     }
 });
 
@@ -109,7 +109,7 @@ const scoreFilter = document.getElementById('sort');
 let filteredStudents = [...students];
 let keyword = "";
 let rankValue = "All";
-let sortAsc = "true";
+let sortAsc = true;
 
 searchInput.addEventListener('input', function() {
     
@@ -172,7 +172,7 @@ function applyFilter(){
         let name = student.name.trim().toLowerCase();
         let keywordMatch = name.includes(keyword);
 
-        let rankMatch = "true";
+        let rankMatch = true;
 
         if (rankValue !== "All"){
             rankMatch = (rankValue === getRank(student.score));
