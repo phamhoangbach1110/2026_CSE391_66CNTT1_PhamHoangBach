@@ -152,14 +152,16 @@ rankFilter.addEventListener('change', function(){
 
 scoreFilter.addEventListener('click', function(){
 
-    if (scoreFilter.textContent === 'Điểm ▼' || scoreFilter.textContent === 'Điểm'){
-        scoreFilter.textContent = 'Điểm ▲';
-        // filteredStudents = students.sort((a, b) => a.score - b.score);
-    } else {
-        scoreFilter.textContent = 'Điểm ▼';
-        // filteredStudents = students.sort((a, b) => b.score - a.score);
-    }
+    // if (scoreFilter.textContent === 'Điểm ▼' || scoreFilter.textContent === 'Điểm'){
+    //     scoreFilter.textContent = 'Điểm ▲';
+    //     // filteredStudents = students.sort((a, b) => a.score - b.score);
+    // } else {
+    //     scoreFilter.textContent = 'Điểm ▼';
+    //     // filteredStudents = students.sort((a, b) => b.score - a.score);
+    // }
     // renderTable();
+
+    scoreFilter.textContent = sortAsc ? "Điểm ▲" : 'Điểm ▼';
 
     sortAsc = !sortAsc;
 
